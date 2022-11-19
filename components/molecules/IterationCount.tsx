@@ -15,7 +15,9 @@ const IterationCount = ({
   return (
     <Select
       flexBasis={{ base: '10%' }}
-      onChange={({ target: { value } }) => setCount((prev) => parseInt(value))}
+      onChange={({ target: { value } }) =>
+        setCount((prev) => parseInt(value))
+      }
       value={count}
     >
       {countArr.map((c) => (

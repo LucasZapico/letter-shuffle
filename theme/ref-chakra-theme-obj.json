@@ -1,7 +1,10 @@
 {
   "semanticTokens": {
     "colors": {
-      "chakra-body-text": { "_light": "gray.800", "_dark": "whiteAlpha.900" },
+      "chakra-body-text": {
+        "_light": "gray.800",
+        "_dark": "whiteAlpha.900"
+      },
       "chakra-body-bg": { "_light": "white", "_dark": "gray.800" },
       "chakra-border-color": {
         "_light": "gray.200",
@@ -499,10 +502,24 @@
       }
     },
     "Alert": {
-      "parts": ["title", "description", "container", "icon", "spinner"],
+      "parts": [
+        "title",
+        "description",
+        "container",
+        "icon",
+        "spinner"
+      ],
       "baseStyle": {
-        "container": { "bg": "var(--alert-bg)", "px": "4", "py": "3" },
-        "title": { "fontWeight": "bold", "lineHeight": "6", "marginEnd": "2" },
+        "container": {
+          "bg": "var(--alert-bg)",
+          "px": "4",
+          "py": "3"
+        },
+        "title": {
+          "fontWeight": "bold",
+          "lineHeight": "6",
+          "marginEnd": "2"
+        },
         "description": { "lineHeight": "6" },
         "icon": {
           "color": "var(--alert-fg)",
@@ -523,7 +540,13 @@
       "defaultProps": { "variant": "subtle", "colorScheme": "blue" }
     },
     "Avatar": {
-      "parts": ["label", "badge", "container", "excessLabel", "group"],
+      "parts": [
+        "label",
+        "badge",
+        "container",
+        "excessLabel",
+        "group"
+      ],
       "sizes": {
         "2xs": {
           "container": {
@@ -532,7 +555,10 @@
             "fontSize": "calc(1rem / 2.5)"
           },
           "excessLabel": { "width": 4, "height": 4 },
-          "label": { "fontSize": "calc(1rem / 2.5)", "lineHeight": "1rem" }
+          "label": {
+            "fontSize": "calc(1rem / 2.5)",
+            "lineHeight": "1rem"
+          }
         },
         "xs": {
           "container": {
@@ -541,7 +567,10 @@
             "fontSize": "calc(1.5rem / 2.5)"
           },
           "excessLabel": { "width": 6, "height": 6 },
-          "label": { "fontSize": "calc(1.5rem / 2.5)", "lineHeight": "1.5rem" }
+          "label": {
+            "fontSize": "calc(1.5rem / 2.5)",
+            "lineHeight": "1.5rem"
+          }
         },
         "sm": {
           "container": {
@@ -550,7 +579,10 @@
             "fontSize": "calc(2rem / 2.5)"
           },
           "excessLabel": { "width": 8, "height": 8 },
-          "label": { "fontSize": "calc(2rem / 2.5)", "lineHeight": "2rem" }
+          "label": {
+            "fontSize": "calc(2rem / 2.5)",
+            "lineHeight": "2rem"
+          }
         },
         "md": {
           "container": {
@@ -559,7 +591,10 @@
             "fontSize": "calc(3rem / 2.5)"
           },
           "excessLabel": { "width": 12, "height": 12 },
-          "label": { "fontSize": "calc(3rem / 2.5)", "lineHeight": "3rem" }
+          "label": {
+            "fontSize": "calc(3rem / 2.5)",
+            "lineHeight": "3rem"
+          }
         },
         "lg": {
           "container": {
@@ -568,7 +603,10 @@
             "fontSize": "calc(4rem / 2.5)"
           },
           "excessLabel": { "width": 16, "height": 16 },
-          "label": { "fontSize": "calc(4rem / 2.5)", "lineHeight": "4rem" }
+          "label": {
+            "fontSize": "calc(4rem / 2.5)",
+            "lineHeight": "4rem"
+          }
         },
         "xl": {
           "container": {
@@ -577,7 +615,10 @@
             "fontSize": "calc(6rem / 2.5)"
           },
           "excessLabel": { "width": 24, "height": 24 },
-          "label": { "fontSize": "calc(6rem / 2.5)", "lineHeight": "6rem" }
+          "label": {
+            "fontSize": "calc(6rem / 2.5)",
+            "lineHeight": "6rem"
+          }
         },
         "2xl": {
           "container": {
@@ -586,7 +627,10 @@
             "fontSize": "calc(8rem / 2.5)"
           },
           "excessLabel": { "width": 32, "height": 32 },
-          "label": { "fontSize": "calc(8rem / 2.5)", "lineHeight": "8rem" }
+          "label": {
+            "fontSize": "calc(8rem / 2.5)",
+            "lineHeight": "8rem"
+          }
         },
         "full": {
           "container": {
@@ -653,8 +697,18 @@
         }
       },
       "sizes": {
-        "lg": { "h": "12", "minW": "12", "fontSize": "lg", "px": "6" },
-        "md": { "h": "10", "minW": "10", "fontSize": "md", "px": "4" },
+        "lg": {
+          "h": "12",
+          "minW": "12",
+          "fontSize": "lg",
+          "px": "6"
+        },
+        "md": {
+          "h": "10",
+          "minW": "10",
+          "fontSize": "md",
+          "px": "4"
+        },
         "sm": { "h": "8", "minW": "8", "fontSize": "sm", "px": "3" },
         "xs": { "h": "6", "minW": "6", "fontSize": "xs", "px": "2" }
       },
@@ -704,7 +758,12 @@
       "defaultProps": { "variant": "subtle", "colorScheme": "gray" }
     },
     "Container": {
-      "baseStyle": { "w": "100%", "mx": "auto", "maxW": "prose", "px": "4" }
+      "baseStyle": {
+        "w": "100%",
+        "mx": "auto",
+        "maxW": "prose",
+        "px": "4"
+      }
     },
     "Divider": {
       "baseStyle": { "opacity": 0.6, "borderColor": "inherit" },
@@ -763,7 +822,9 @@
         }
       }
     },
-    "Form": { "parts": ["container", "requiredIndicator", "helperText"] },
+    "Form": {
+      "parts": ["container", "requiredIndicator", "helperText"]
+    },
     "FormError": { "parts": ["text", "icon"] },
     "FormLabel": {
       "baseStyle": {
@@ -874,8 +935,16 @@
       },
       "variants": {
         "unstyled": {
-          "field": { "bg": "transparent", "px": "0", "height": "auto" },
-          "addon": { "bg": "transparent", "px": "0", "height": "auto" }
+          "field": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          },
+          "addon": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          }
         }
       },
       "defaultProps": { "size": "md", "variant": "outline" }
@@ -905,7 +974,14 @@
       }
     },
     "Menu": {
-      "parts": ["button", "list", "item", "groupTitle", "command", "divider"]
+      "parts": [
+        "button",
+        "list",
+        "item",
+        "groupTitle",
+        "command",
+        "divider"
+      ]
     },
     "Modal": {
       "parts": [
@@ -1021,8 +1097,16 @@
       },
       "variants": {
         "unstyled": {
-          "field": { "bg": "transparent", "px": "0", "height": "auto" },
-          "addon": { "bg": "transparent", "px": "0", "height": "auto" }
+          "field": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          },
+          "addon": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          }
         }
       },
       "defaultProps": { "size": "md", "variant": "outline" }
@@ -1040,13 +1124,37 @@
         "textAlign": "center"
       },
       "sizes": {
-        "lg": { "fontSize": "lg", "w": 12, "h": 12, "borderRadius": "md" },
-        "md": { "fontSize": "md", "w": 10, "h": 10, "borderRadius": "md" },
-        "sm": { "fontSize": "sm", "w": 8, "h": 8, "borderRadius": "sm" },
-        "xs": { "fontSize": "xs", "w": 6, "h": 6, "borderRadius": "sm" }
+        "lg": {
+          "fontSize": "lg",
+          "w": 12,
+          "h": 12,
+          "borderRadius": "md"
+        },
+        "md": {
+          "fontSize": "md",
+          "w": 10,
+          "h": 10,
+          "borderRadius": "md"
+        },
+        "sm": {
+          "fontSize": "sm",
+          "w": 8,
+          "h": 8,
+          "borderRadius": "sm"
+        },
+        "xs": {
+          "fontSize": "xs",
+          "w": 6,
+          "h": 6,
+          "borderRadius": "sm"
+        }
       },
       "variants": {
-        "unstyled": { "bg": "transparent", "px": "0", "height": "auto" }
+        "unstyled": {
+          "bg": "transparent",
+          "px": "0",
+          "height": "auto"
+        }
       },
       "defaultProps": { "size": "md", "variant": "outline" }
     },
@@ -1156,8 +1264,16 @@
       },
       "variants": {
         "unstyled": {
-          "field": { "bg": "transparent", "px": "0", "height": "auto" },
-          "addon": { "bg": "transparent", "px": "0", "height": "auto" }
+          "field": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          },
+          "addon": {
+            "bg": "transparent",
+            "px": "0",
+            "height": "auto"
+          }
         }
       },
       "defaultProps": { "size": "md", "variant": "outline" }
@@ -1208,7 +1324,10 @@
         "container": {},
         "label": { "fontWeight": "medium" },
         "helpText": { "opacity": 0.8, "marginBottom": "2" },
-        "number": { "verticalAlign": "baseline", "fontWeight": "semibold" },
+        "number": {
+          "verticalAlign": "baseline",
+          "fontWeight": "semibold"
+        },
         "icon": {
           "marginEnd": 1,
           "w": "3.5",
@@ -1284,17 +1403,37 @@
       "variants": { "unstyled": {} },
       "sizes": {
         "sm": {
-          "th": { "px": "4", "py": "1", "lineHeight": "4", "fontSize": "xs" },
-          "td": { "px": "4", "py": "2", "fontSize": "sm", "lineHeight": "4" },
+          "th": {
+            "px": "4",
+            "py": "1",
+            "lineHeight": "4",
+            "fontSize": "xs"
+          },
+          "td": {
+            "px": "4",
+            "py": "2",
+            "fontSize": "sm",
+            "lineHeight": "4"
+          },
           "caption": { "px": "4", "py": "2", "fontSize": "xs" }
         },
         "md": {
-          "th": { "px": "6", "py": "3", "lineHeight": "4", "fontSize": "xs" },
+          "th": {
+            "px": "6",
+            "py": "3",
+            "lineHeight": "4",
+            "fontSize": "xs"
+          },
           "td": { "px": "6", "py": "4", "lineHeight": "5" },
           "caption": { "px": "6", "py": "2", "fontSize": "sm" }
         },
         "lg": {
-          "th": { "px": "8", "py": "4", "lineHeight": "5", "fontSize": "sm" },
+          "th": {
+            "px": "8",
+            "py": "4",
+            "lineHeight": "5",
+            "fontSize": "sm"
+          },
           "td": { "px": "8", "py": "5", "lineHeight": "6" },
           "caption": { "px": "6", "py": "2", "fontSize": "md" }
         }
@@ -1306,14 +1445,25 @@
       }
     },
     "Tabs": {
-      "parts": ["root", "tab", "tablist", "tabpanel", "tabpanels", "indicator"],
+      "parts": [
+        "root",
+        "tab",
+        "tablist",
+        "tabpanel",
+        "tabpanels",
+        "indicator"
+      ],
       "sizes": {
         "sm": { "tab": { "py": 1, "px": 4, "fontSize": "sm" } },
         "md": { "tab": { "fontSize": "md", "py": 2, "px": 4 } },
         "lg": { "tab": { "fontSize": "lg", "py": 3, "px": 4 } }
       },
       "variants": { "unstyled": {} },
-      "defaultProps": { "size": "md", "variant": "line", "colorScheme": "blue" }
+      "defaultProps": {
+        "size": "md",
+        "variant": "line",
+        "colorScheme": "blue"
+      }
     },
     "Tag": {
       "parts": ["container", "label", "closeButton"],
@@ -1354,13 +1504,26 @@
             "fontSize": "xs",
             "px": "2"
           },
-          "closeButton": { "marginEnd": "-2px", "marginStart": "0.35rem" }
+          "closeButton": {
+            "marginEnd": "-2px",
+            "marginStart": "0.35rem"
+          }
         },
         "md": {
-          "container": { "minH": "6", "minW": "6", "fontSize": "sm", "px": "2" }
+          "container": {
+            "minH": "6",
+            "minW": "6",
+            "fontSize": "sm",
+            "px": "2"
+          }
         },
         "lg": {
-          "container": { "minH": "8", "minW": "8", "fontSize": "md", "px": "3" }
+          "container": {
+            "minH": "8",
+            "minW": "8",
+            "fontSize": "md",
+            "px": "3"
+          }
         }
       },
       "defaultProps": {
@@ -1385,13 +1548,37 @@
         "verticalAlign": "top"
       },
       "sizes": {
-        "xs": { "fontSize": "xs", "px": "2", "h": "6", "borderRadius": "sm" },
-        "sm": { "fontSize": "sm", "px": "3", "h": "8", "borderRadius": "sm" },
-        "md": { "fontSize": "md", "px": "4", "h": "10", "borderRadius": "md" },
-        "lg": { "fontSize": "lg", "px": "4", "h": "12", "borderRadius": "md" }
+        "xs": {
+          "fontSize": "xs",
+          "px": "2",
+          "h": "6",
+          "borderRadius": "sm"
+        },
+        "sm": {
+          "fontSize": "sm",
+          "px": "3",
+          "h": "8",
+          "borderRadius": "sm"
+        },
+        "md": {
+          "fontSize": "md",
+          "px": "4",
+          "h": "10",
+          "borderRadius": "md"
+        },
+        "lg": {
+          "fontSize": "lg",
+          "px": "4",
+          "h": "12",
+          "borderRadius": "md"
+        }
       },
       "variants": {
-        "unstyled": { "bg": "transparent", "px": "0", "height": "auto" }
+        "unstyled": {
+          "bg": "transparent",
+          "px": "0",
+          "height": "auto"
+        }
       },
       "defaultProps": { "size": "md", "variant": "outline" }
     },

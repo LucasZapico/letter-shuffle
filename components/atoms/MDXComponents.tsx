@@ -1,4 +1,10 @@
-import { Heading, Text, Box, Link, useColorMode } from '@chakra-ui/react'
+import {
+  Heading,
+  Text,
+  Box,
+  Link,
+  useColorMode,
+} from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import NextLink from 'next/link'
 import Image from 'next/image'
@@ -161,6 +167,9 @@ export const LinkMDX = ({
   )
 }
 
-export const ResponsiveImageMDX = ({ alt, ...rest }: { alt: string }) => (
-  <Image src="" alt={alt} layout="responsive" {...rest} />
-)
+export const ResponsiveImageMDX = ({
+  alt,
+  ...rest
+}: {
+  alt: string
+}) => <Image src="" alt={alt} layout="responsive" {...rest} />

@@ -1,6 +1,7 @@
 const base = {
   title: 'Letter Shuffler',
-  description: 'A simple web app that shuffle around the letters of a word',
+  description:
+    'A simple web app that shuffle around the letters of a word',
   language: 'en-us',
   copyWrite: 'lucaszapico',
   author: '',

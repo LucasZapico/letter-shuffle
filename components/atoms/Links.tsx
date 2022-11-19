@@ -72,7 +72,8 @@ const MagicLink = chakra<typeof NextLink, NextLinkProps>(NextLink, {
     }),
   },
 
-  shouldForwardProp: (prop) => ['href', 'target', 'children'].includes(prop),
+  shouldForwardProp: (prop) =>
+    ['href', 'target', 'children'].includes(prop),
 })
 
 export default MagicLink

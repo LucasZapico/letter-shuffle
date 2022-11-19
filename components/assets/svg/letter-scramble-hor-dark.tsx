@@ -1,5 +1,14 @@
-import React, { SVGAttributes, SVGProps, ReactSVGElement } from 'react'
-import { Box, BoxProps, IconProps, useColorMode } from '@chakra-ui/react'
+import React, {
+  SVGAttributes,
+  SVGProps,
+  ReactSVGElement,
+} from 'react'
+import {
+  Box,
+  BoxProps,
+  IconProps,
+  useColorMode,
+} from '@chakra-ui/react'
 
 type Overwrite<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U
 

@@ -18,7 +18,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import { useLanguage, Language, useWord, useResults, useCount } from 'store'
+import {
+  useLanguage,
+  Language,
+  useWord,
+  useResults,
+  useCount,
+} from 'store'
 
 /**
  * init types
@@ -64,7 +70,11 @@ const Home: NextPage = () => {
           background={colorMode === 'dark' ? 'gray.800' : 'gray.200'}
           borderRadius="md"
         >
-          <Flex flexWrap="wrap" justifyContent="space-between" py={10}>
+          <Flex
+            flexWrap="wrap"
+            justifyContent="space-between"
+            py={10}
+          >
             <Box px={4} flexGrow="1" maxW="600px">
               <Heading as="div" size="sm" mb={4} variant="sec">
                 Enter a word of short phrase

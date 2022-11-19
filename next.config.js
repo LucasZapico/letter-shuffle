@@ -28,7 +28,7 @@ const nextConfig = {
   // compiler: {
   //   removeConsole: process.env.NODE_ENV === 'development' ? false : true,
   // },
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 }
 
 const finalConfig = {

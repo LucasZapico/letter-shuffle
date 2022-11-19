@@ -5,7 +5,8 @@ import { useState } from 'react'
  */
 export type Language = 'null' | 'non-sense' | 'english' | 'french'
 
-export const useLanguage = (initial: Language) => useState<Language>(initial)
+export const useLanguage = (initial: Language) =>
+  useState<Language>(initial)
 export type UseLanguageType = ReturnType<typeof useLanguage>
 export type LanguageType = UseLanguageType[0]
 export type SetLanguageType = UseLanguageType[1]
@@ -25,7 +26,8 @@ export type SetWordType = UseWordType[1]
  */
 export type Results = string
 
-export const useResults = (initial: Results[]) => useState<Results[]>(initial)
+export const useResults = (initial: Results[]) =>
+  useState<Results[]>(initial)
 export type UseResultsType = ReturnType<typeof useResults>
 export type ResultsType = UseResultsType[0]
 export type SetResultsType = UseResultsType[1]
