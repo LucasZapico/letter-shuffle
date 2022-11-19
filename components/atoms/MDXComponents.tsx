@@ -5,11 +5,12 @@ import {
   Link,
   useColorMode,
 } from '@chakra-ui/react'
-import { ReactNode } from 'react'
+import {
+  ReactNode,
+} from 'react'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { MagicLink } from 'components'
-
 /***
  * Headings
  */
@@ -17,9 +18,9 @@ export const HeadingOneMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
-  const { colorMode } = useColorMode()
+  // const { colorMode } = useColorMode()
   return (
     <Heading
       {...rest}
@@ -37,7 +38,7 @@ export const HeadingTwoMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
   const { colorMode } = useColorMode()
   return (
@@ -56,7 +57,7 @@ export const HeadingThreeMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
   const { colorMode } = useColorMode()
   return (
@@ -75,7 +76,7 @@ export const HeadingFourMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
   const { colorMode } = useColorMode()
   return (
@@ -94,7 +95,7 @@ export const HeadingFiveMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
   const { colorMode } = useColorMode()
   return (
@@ -113,7 +114,7 @@ export const HeadingSixMDX = ({
   children,
   ...rest
 }: {
-  children: ReactNode | string
+  children: string
 }) => {
   const { colorMode } = useColorMode()
   return (
