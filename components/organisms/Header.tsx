@@ -1,13 +1,13 @@
-import { Nav, MobileNav } from 'components'
+import { NavContainer } from 'components'
 import Head from 'next/head'
 
 const Header = () => {
   return (
     <header>
       <Head>
-        <title>Next Head</title>
+        <title>Letter Scramble</title>
       </Head>
-      <Nav display={{ base: 'none', md: 'flex' }} />
+      <NavContainer />
     </header>
   )
 }
