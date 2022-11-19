@@ -39,7 +39,7 @@ const Home: NextPage = () => {
     while (c > 0) {
       lettersArr.sort(() => Math.random() - 0.5)
       const newShuffle = lettersArr.join('')
-      console.log(newShuffle)
+
       if (newShuffle !== word) {
         setResults((prev) => [...prev, newShuffle])
         c = c - 1
@@ -47,10 +47,17 @@ const Home: NextPage = () => {
     }
   }
 
+  /**
+   * TODO: review eslint no empty arrow rule and desired functionality
+   */
+  /* eslint-disable-next-line */
+  useEffect(() => {}, [word, setWord])
+
   return (
     <DefaultLayout>
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" py={20}>
         <Heading>Letter Scramble</Heading>
+
         <Box
           py={10}
           px={6}
@@ -85,6 +92,7 @@ const Home: NextPage = () => {
               <IterationCount setCount={setCount} count={count} />
             </Box>
             <Box
+              mt={4}
               px={4}
               display="flex"
               justifyContent="flex-end"
