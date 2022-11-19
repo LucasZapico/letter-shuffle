@@ -49,11 +49,11 @@ const NavContainer = ({ ...rest }) => {
   return (
     <Flex paddingTop=".3rem" px="1rem" justifyContent="space-between" {...rest}>
       <MagicLink key={generate()} href={'/'} passHref>
-        {/* <Logo
+        <Logo
           width={{ base: '150px', md: '200px' }}
           color={colorMode === 'dark' ? '#ffffff' : '#000000'}
-        /> */}
-        Home
+        />
+        {/* Home */}
       </MagicLink>
       <Nav colorMode={colorMode} router={router} />
       <MobileNav colorMode={colorMode} router={router} />
