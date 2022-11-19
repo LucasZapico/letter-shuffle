@@ -7,6 +7,7 @@ import siteMetaData from 'meta/siteMetaData'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Logo from 'components/assets/svg/letter-scramble-hor-dark'
+import { RouterType } from '@types'
 
 /**
  * TODO: create next chakra link that doesn't next a tags
@@ -15,7 +16,14 @@ import Logo from 'components/assets/svg/letter-scramble-hor-dark'
  * TODO: watch, if height is added to logo their may be a type erro
  */
 
-const Nav = ({ colorMode, router, ...rest }) => {
+const Nav = ({
+  colorMode,
+  router,
+  ...rest
+}: {
+  colorMode: string
+  router: RouterType
+}) => {
   return (
     <Flex
       display={{ base: 'none', md: 'flex' }}
@@ -47,7 +55,12 @@ const NavContainer = ({ ...rest }) => {
   const router = useRouter()
   const isActive = router.pathname === '/'
   return (
-    <Flex paddingTop=".3rem" px="1rem" justifyContent="space-between" {...rest}>
+    <Flex
+      paddingTop=".3rem"
+      px="1rem"
+      justifyContent="space-between"
+      {...rest}
+    >
       <MagicLink key={generate()} href={'/'} passHref>
         <Logo
           width={{ base: '150px', md: '200px' }}

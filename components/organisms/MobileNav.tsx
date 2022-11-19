@@ -10,7 +10,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  useColorMode,
   Box,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -18,8 +17,17 @@ import { MagicLink } from 'components'
 import { generate } from 'shortid'
 import { mainLinks } from 'meta/navLinks'
 import Logo from 'components/assets/svg/letter-scramble-hor-dark'
+import { RouterType } from '@types'
 
-const MobileNav = ({ colorMode, router, ...rest }) => {
+const MobileNav = ({
+  colorMode,
+  router,
+  ...rest
+}: {
+  colorMode: string
+  router: RouterType
+}) => {
+  console.log(router)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
 
@@ -31,7 +39,9 @@ const MobileNav = ({ colorMode, router, ...rest }) => {
       {...rest}
     >
       <Button ref={btnRef} colorScheme="none" onClick={onOpen}>
-        <HamburgerIcon color={colorMode === 'dark' ? 'gray.100' : 'gray.900'} />
+        <HamburgerIcon
+          color={colorMode === 'dark' ? 'gray.100' : 'gray.900'}
+        />
       </Button>
       <Drawer
         size="full"
@@ -41,7 +51,9 @@ const MobileNav = ({ colorMode, router, ...rest }) => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bg={colorMode === 'dark' ? 'gray.800' : 'gray.200'}>
+        <DrawerContent
+          bg={colorMode === 'dark' ? 'gray.800' : 'gray.200'}
+        >
           <DrawerCloseButton />
           <DrawerHeader>
             <Logo width="150px" />
