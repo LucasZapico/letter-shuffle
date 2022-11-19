@@ -1,5 +1,5 @@
 [build]
-command = "npm run build && NODE_OPTIONS='--inspect'"
+command = "npm run build"
 publish = ".next"
 environment = { NODE_VERSION = "16.*" }
 
