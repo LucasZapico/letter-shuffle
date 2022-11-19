@@ -18,4 +18,4 @@ const mainLinks: MainLinksType = [
   // }
 ]
 
-export { mainLinks, MainLinksType }
+export { mainLinks }
