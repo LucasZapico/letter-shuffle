@@ -16,8 +16,8 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { MagicLink } from 'components'
 import { generate } from 'shortid'
 import { mainLinks } from 'meta/navLinks'
-import Logo from 'components/assets/svg/letter-scramble-hor-dark'
 import { RouterType } from '@types'
+import Logo from 'components/assets/svg/letter-scramble-hor-dark'
 
 const MobileNav = ({
   colorMode,
@@ -56,7 +56,10 @@ const MobileNav = ({
         >
           <DrawerCloseButton />
           <DrawerHeader>
-            <Logo width="150px" />
+            <Logo
+              width={{ base: '150px', md: '200px' }}
+              color={colorMode === 'dark' ? '#ffffff' : '#000000'}
+            />
           </DrawerHeader>
           <DrawerBody>
             <Flex justifyContent="flex-end" flexGrow="1">
