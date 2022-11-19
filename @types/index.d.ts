@@ -9,7 +9,7 @@ export type RouterType = {
   basePath: string
   locale: string
   locales: string[]
-  defaultLocales: string
+  // defaultLocales: string
   domainLocales: array<{ domain; defaultLocale; locales }>
   isReady: boolean
   isPreview: boolean
