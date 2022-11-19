@@ -1,29 +1,27 @@
 import React from 'react'
 import { Box, Flex, Link, Text } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { MagicLink } from 'components'
 import moment from 'moment'
+import siteMetaData from 'meta/siteMetaData'
+
+const { copyWrite } = siteMetaData
 
 const SubFooter = () => {
   return (
     <Box
-      
       display={{ base: 'flex' }}
       alignItems="center"
       paddingX="1rem"
       paddingY=".5rem"
     >
-      <NextLink href="" passHref>
-        <Link variant="" paddingX=".5rem">
-          Privacy Policy
-        </Link>
-      </NextLink>
-      <NextLink href="" passHref>
-        <Link variant="" paddingX=".5rem">
-          Terms of Use
-        </Link>
-      </NextLink>
+      <MagicLink href="" paddingX=".5rem">
+        Privacy Policy
+      </MagicLink>
+      <MagicLink href="" paddingX=".5rem">
+        Terms of Use
+      </MagicLink>
       <Text mb={0} paddingX=".5rem">
-        &copy;BlueMonkeyMakes {moment().format('YYYY')}
+        &copy; {copyWrite} {moment().format('YYYY')}
       </Text>
     </Box>
   )

@@ -1,9 +1,9 @@
-import { Flex, Heading, Box, Link } from '@chakra-ui/react'
+import { Flex, Heading, Box } from '@chakra-ui/react'
 import { generate } from 'shortid'
 import { mainLinks } from 'meta/navLinks'
 import siteMetaData from 'meta/siteMetaData'
 import NextLink from 'next/link'
-import { SubFooter } from 'components/index'
+import { SubFooter, MagicLink } from 'components/index'
 
 const Footer = () => {
   return (
@@ -21,9 +21,13 @@ const Footer = () => {
       <Flex flexDir={{ base: 'column' }}>
         {mainLinks.map((link) => {
           return (
-            <NextLink key={generate()} href={link.path} passHref>
-              <Link variant="navLink">{link.name}</Link>
-            </NextLink>
+            <MagicLink
+              // variant="navLink"
+              key={generate()}
+              href={link.path}
+            >
+              {link.name}
+            </MagicLink>
           )
         })}
       </Flex>
