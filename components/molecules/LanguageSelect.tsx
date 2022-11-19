@@ -13,7 +13,6 @@ const LanguageSelect = ({
     <RadioGroup
       px={4}
       onChange={(e: Language) => {
-        console.log(e)
         setLanguage(() => e)
       }}
       value={language}

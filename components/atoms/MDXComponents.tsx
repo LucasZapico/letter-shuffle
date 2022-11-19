@@ -20,7 +20,6 @@ export const HeadingOneMDX = ({
 }: {
   children: string
 }) => {
-  // const { colorMode } = useColorMode()
   return (
     <Heading
       {...rest}
