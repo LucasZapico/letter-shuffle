@@ -1,10 +1,12 @@
 <div align="center">
 
-<img style="margin-bottom: 2rem" src='./public/letter-scramble-hor-one.svg'/>
+<!-- <img style="margin-bottom: 2rem" src='./public/letter-scramble-hor-one.svg'/> -->
 
 A simple letter scramble app moving onto the world wide web from its humble origins as [reorder-string - codepen](https://codepen.io/LucasZapico/pen/wvMqqwO) project.
 
 </div>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f0ff24d-78c4-42fa-8fdf-fd1ebc26e184/deploy-status)](https://app.netlify.com/sites/timely-salamander-482409/deploys)
 
 ## About: TL:DR
 
@@ -35,3 +37,7 @@ eslint --cache \*\*/\_.ts
 <img style="margin-top: 2rem" src="https://skillicons.dev/icons?i=github,nextjs,typescript,netlify"/>
 
 </div>
+
+## Todo
+
+- [ ] TODO: enter should shuffle
