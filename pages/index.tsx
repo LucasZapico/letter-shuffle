@@ -38,10 +38,9 @@ const Home: NextPage = () => {
   const [results, setResults] = useResults([])
   const [count, setCount] = useCount(1)
 
-  const shuffleLetters = (count: number) => {
+  const shuffleLetters = (c) => {
     const lettersArr = word.split('')
 
-    let c = count
     while (c > 0) {
       lettersArr.sort(() => Math.random() - 0.5)
       const newShuffle = lettersArr.join('')
