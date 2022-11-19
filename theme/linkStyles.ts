@@ -2,7 +2,7 @@ const LinkStyles = {
   baseStyle: {
     transition: 'all 0.15s ease-out',
     cursor: 'pointer',
-    textDecoration: 'none',
+    textDecoration: 'underline',
     outline: 'none',
 
     color: 'inherit',

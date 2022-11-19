@@ -4,6 +4,7 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
 import LinkStyles from 'theme/linkStyles'
+import { ButtonStyles } from './buttonStyles'
 import { Color } from './colorStyles'
 import { HeadingStyles, TextStyles, Fonts } from './typographyStyles'
 
@@ -26,6 +27,7 @@ const theme = extendTheme({
       borderColor: 'pink',
     },
     Link: LinkStyles,
+    Buttons: ButtonStyles,
     Heading: HeadingStyles,
     Text: TextStyles,
   },
