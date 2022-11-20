@@ -61,7 +61,7 @@ const Home: NextPage = () => {
   return (
     <DefaultLayout>
       <Container maxW="container.xl" py={20}>
-        <Heading>Letter Scramble</Heading>
+        <Heading>Letter Shuffle</Heading>
 
         <Box
           py={10}
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           >
             <Box px={4} flexGrow="1" maxW="600px">
               <Heading as="div" size="sm" mb={4} variant="sec">
-                Enter a word of short phrase
+                Enter a word or short phrase
               </Heading>
               <Input
                 flexBasis={{ base: '60%' }}
